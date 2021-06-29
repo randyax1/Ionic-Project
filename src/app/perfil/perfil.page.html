@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: 30px;" color="devgramColor">Randyax1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+    <ion-grid>
+    <ion-row class="text-center">
+
+      <ion-col size="12">
+        <ion-avatar class="avatar-icon" style="margin: 0 auto;">
+          <img src="../../assets/perfil/mi-foto.jpg">
+        </ion-avatar>
+      </ion-col>
+
+      <ion-col style="margin-top: -15px;" size="4">
+        
+          <h1>65</h1>
+        
+      </ion-col>
+
+      <ion-col style="margin-top: -15px;" size="4">
+        
+         <h1>333</h1>
+        
+      </ion-col>
+
+      <ion-col style="margin-top: -15px;" size="4">
+        
+         <h1>141</h1>
+        
+      </ion-col>
+
+    </ion-row>
+
+
+    <ion-row class="text-center">
+      <ion-col  style="margin-top: -25px;" size="4">
+        
+        <h3>Publicaci....</h3>
+      
+    </ion-col>
+
+    <ion-col style="margin-top: -25px;" size="4">
+      
+       <h3>Seguidores</h3>
+      
+    </ion-col>
+
+    <ion-col style="margin-top: -25px;" size="4">
+      
+       <h3>Seguidos</h3>
+      
+    </ion-col>
+    </ion-row>
+
+
+    <ion-row style="margin-top: -20px" class="text-center">
+      <ion-col>
+        <h1>¡Bienvenido Desarrollador!</h1>
+      </ion-col>
+    </ion-row>
+
+    </ion-grid>
+
+    <ion-grid *ngFor="let post of posts" style="margin-top: -15px">
+      <ion-row>
+        <ion-col (click)="openNavDetailPage()">
+          <img [src]="post.imagen0" />
+        </ion-col>
+        <ion-col>
+          <img [src]="post.imagen1" />
+        </ion-col>
+        <ion-col>
+          <img [src]="post.imagen2" />
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+
+</ion-content>

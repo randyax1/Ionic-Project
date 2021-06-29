@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: 25px;" color="devgramColor">Menciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <h1>Hoy</h1>
+  </ion-item>
+
+  <ion-item *ngFor="let mencionNow of mencionNowData">
+
+    <ion-avatar>
+      <img style="margin-right:40px" [src]="mencionNow.imagenAvatar">
+    </ion-avatar>
+    
+    <p class="ion-text-initial" style="font-size: 16px; margin-left:10px;">
+      {{ mencionNow.descripcion}}
+    </p>
+
+    <ion-thumbnail slot="end">
+      <img [src]="mencionNow.imagenPublicacion">
+    </ion-thumbnail>
+
+  </ion-item>
+
+
+  <ion-item>
+    <h1>Esta Semana</h1>
+  </ion-item>
+
+  <ion-item *ngFor="let mencionWeek of mencionWeekData">
+
+    <ion-avatar>
+      <img style="margin-right:40px" [src]="mencionWeek.imagenAvatar">
+    </ion-avatar>
+    
+    <p class="ion-text-initial" style="font-size: 16px; margin-left:10px;">
+      {{ mencionWeek.descripcion}}
+    </p>
+
+    <ion-thumbnail slot="end">
+      <img [src]="mencionWeek.imagenPublicacion">
+    </ion-thumbnail>
+
+  </ion-item>
+
+
+  <ion-item>
+    <h1>Este mes</h1>
+  </ion-item>
+
+  <ion-item *ngFor="let mencionMonth of mencionMonthData">
+
+    <ion-avatar>
+      <img style="margin-right:40px" [src]="mencionMonth.imagenAvatar">
+    </ion-avatar>
+    
+    <p class="ion-text-initial" style="font-size: 16px; margin-left:10px;">
+      {{ mencionMonth.descripcion}}
+    </p>
+
+    <ion-thumbnail slot="end">
+      <img [src]="mencionMonth.imagenPublicacion">
+    </ion-thumbnail>
+
+  </ion-item>
+
+
+</ion-content>

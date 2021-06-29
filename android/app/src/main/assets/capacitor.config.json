@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "devgram",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

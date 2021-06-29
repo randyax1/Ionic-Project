@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: 30px;" color="devgramColor">Configuraciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item *ngFor="let config of configData">
+
+    <ion-avatar>
+      <ion-icon style="font-size: 50px;" name="{{config.icon}}"></ion-icon>
+    </ion-avatar>
+    
+    <p class="config-details">
+      {{ config.configOpcion }}
+    </p>
+
+  </ion-item>
+
+  <ion-item>
+    <h1 style="font-size: 30px; font-weight: normal;">Inicio de Sesión</h1>
+  </ion-item>
+    
+  <ion-item>
+    <h1 style="margin-top:14px; margin-left: 15px; font-size: 25px; font-weight: normal; color:blue">Agregar cuentas</h1>
+  </ion-item>
+  <ion-item style="margin-bottom:10px" (click)="openNavDetailPage()">
+    <ion-button style="margin-left: 15px; font-size: 25px;">
+    <h1 style="margin-top: 11px;font-weight: normal; color:black">Salir</h1>
+    </ion-button>
+  </ion-item>
+  
+</ion-content>
